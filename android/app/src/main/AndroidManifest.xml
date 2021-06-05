@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.unero.unmovie.movieapp">
+
+   <uses-permission android:name="android.permission.INTERNET"/>
+   
    <application
-        android:label="movieapp"
+        android:label="Un Movie"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
