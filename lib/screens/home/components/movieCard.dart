@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movieapp/model/Movie.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:movieapp/screens/detail/detail_screen.dart';
@@ -40,13 +41,14 @@ class MovieCard extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 10),
+              padding: EdgeInsets.only(top: 8.0),
               child: Text(
                 movie.title,
-                style: Theme.of(context)
-                    .textTheme
-                    .headline5
-                    .copyWith(fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+                style: GoogleFonts.roboto(
+                  textStyle: Theme.of(context).textTheme.headline5,
+                  fontWeight: FontWeight.bold
+                ),
               ),
             ),
             Row(
@@ -65,10 +67,9 @@ class MovieCard extends StatelessWidget {
                         fontSize: 16.0);
                   },
                 ),
-                SizedBox(width: 10),
                 Text(
                   movie.rating.toString(),
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: Theme.of(context).textTheme.headline6,
                 )
               ],
             )

@@ -1,5 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:movieapp/screens/home/components/categoryList.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movieapp/screens/home/components/movieCaraousel.dart';
 
 class Body extends StatelessWidget {
@@ -8,7 +9,18 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          CategoryList(),
+          Container(
+            alignment: Alignment.center,
+            padding: EdgeInsets.only(top: 8, left: 8),
+            child: Text(
+              'Popular Movie',
+              style: GoogleFonts.gochiHand(
+                textStyle: Theme.of(context).textTheme.headline4,
+                color: Colors.black,
+                decoration: TextDecoration.underline
+              ),
+            ),
+          ),
           SizedBox(height: 20),
           Carousel(),
         ],

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart ';
 import 'package:movieapp/screens/home/components/body.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -9,6 +10,17 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: createAppBar(),
       body: Body(),
+      persistentFooterButtons: [
+        InkWell(
+          child: Text(
+            'Unero | 2021',
+            style: GoogleFonts.zcoolKuaiLe(
+              textStyle: Theme.of(context).textTheme.bodyText1,
+              color: Colors.blue
+            ),
+          ),
+        )
+      ],
     );
   }
 
@@ -22,8 +34,8 @@ class HomeScreen extends StatelessWidget {
       ),
       title: Text(
         'UnMovie',
-        style: TextStyle(
-            fontSize: 25, fontWeight: FontWeight.bold, color: Colors.black),
+        style: GoogleFonts.oswald(
+            textStyle: TextStyle(color: Colors.black, fontSize: 35.0)),
       ),
     );
   }

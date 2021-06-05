@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Un Movie',
-        theme: ThemeData(visualDensity: VisualDensity.adaptivePlatformDensity),
-        home: HomeScreen());
+      debugShowCheckedModeBanner: false,
+      title: 'Un Movie',
+      theme: ThemeData(visualDensity: VisualDensity.adaptivePlatformDensity),
+      home: HomeScreen(),
+    );
   }
 }

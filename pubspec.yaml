@@ -28,6 +28,7 @@ dependencies:
   animations: ^1.1.0 # Animate
   fluttertoast: ^8.0.7 # Toast
   google_fonts: ^2.1.0 # Google Fonts
+  share_plus: ^2.1.2 # Sharing
 
 dev_dependencies:
   flutter_test:

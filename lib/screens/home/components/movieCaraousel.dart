@@ -10,7 +10,7 @@ class Carousel extends StatefulWidget {
 
 class _CarouselState extends State<Carousel> {
   PageController _pageController;
-  int initialPage = 1;
+  int initialPage = 0;
 
   @override
   void initState() {
@@ -45,10 +45,12 @@ class _CarouselState extends State<Carousel> {
     );
   }
 
+  // Slider Effect
   Widget movieSlider(int index) => AnimatedBuilder(
         animation: _pageController,
         builder: (context, child) {
           double value = 0;
+          // Rotate Effect
           if (_pageController.position.haveDimensions) {
             value = index - _pageController.page;
             value = (value * 0.038).clamp(-1, 1);
