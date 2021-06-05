@@ -2,11 +2,10 @@ class Movie {
   final int id, year;
   final double rating;
   final List<String> genres;
-  final String plot, title, poster, backdrop;
+  final String plot, title, poster;
 
   Movie({
     this.poster,
-    this.backdrop,
     this.title,
     this.id,
     this.year,
@@ -22,7 +21,6 @@ List<Movie> movies = [
     title: "Godzilla vs. Kong",
     year: 2021,
     poster: "assets/posters/poster1.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.1,
     genres: ["Action", "Adventure", "Science", "Fiction"],
     plot:
@@ -33,7 +31,6 @@ List<Movie> movies = [
     title: "The SpongeBob Movie: Sponge on the Run",
     year: 2020,
     poster: "assets/posters/poster2.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 7.8,
     genres: ["Animation", "Fantasy", "Adventure", "Comedy", "Family"],
     plot:
@@ -44,7 +41,6 @@ List<Movie> movies = [
     title: "Mortal Kombat",
     year: 2021,
     poster: "assets/posters/poster3.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 7.6,
     genres: ["Action", "Fantasy", "Adventure"],
     plot:
@@ -55,7 +51,6 @@ List<Movie> movies = [
     title: "Cruella",
     year: 2021,
     poster: "assets/posters/poster4.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.8,
     genres: ["Comedy", "Crime"],
     plot:
@@ -66,7 +61,6 @@ List<Movie> movies = [
     title: "Friends: The Reunion",
     year: 2021,
     poster: "assets/posters/poster5.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.5,
     genres: ["Comedy", "Documentary", "TV Movie"],
     plot:
@@ -77,7 +71,6 @@ List<Movie> movies = [
     title: "Zack Snyder's Justice League",
     year: 2021,
     poster: "assets/posters/poster6.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.5,
     genres: ["Action", "Adventure", "Fantasy", "Science Fiction"],
     plot:
@@ -88,7 +81,6 @@ List<Movie> movies = [
     title: "Wonder Woman 1984",
     year: 2020,
     poster: "assets/posters/poster7.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 6.7,
     genres: ["Fantasy", "Action", "Adventure"],
     plot:
@@ -99,7 +91,6 @@ List<Movie> movies = [
     title: "My Hero Academia: Heroes Rising",
     year: 2019,
     poster: "assets/posters/poster8.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.5,
     genres: ["Animation", "Action", "Fantasy", "Adventure"],
     plot:
@@ -110,7 +101,6 @@ List<Movie> movies = [
     title: "Joker",
     year: 2019,
     poster: "assets/posters/poster9.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.2,
     genres: ["Crime", "Thriller", "Drama"],
     plot:
@@ -121,7 +111,6 @@ List<Movie> movies = [
     title: "Avengers: Infinity War",
     year: 2018,
     poster: "assets/posters/poster10.jpg",
-    backdrop: "assets/images/backdrop_1.jpg",
     rating: 8.3,
     genres: ["Adventure", "Action", "Science Fiction"],
     plot:
