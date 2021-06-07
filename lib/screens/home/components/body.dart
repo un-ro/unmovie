@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movieapp/screens/home/components/movieCaraousel.dart';
+import 'package:movieapp/screens/home/components/movie_caraousel.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -15,10 +15,9 @@ class Body extends StatelessWidget {
             child: Text(
               'Popular Movie',
               style: GoogleFonts.gochiHand(
-                textStyle: Theme.of(context).textTheme.headline4,
-                color: Colors.black,
-                decoration: TextDecoration.underline
-              ),
+                  textStyle: Theme.of(context).textTheme.headline4,
+                  color: Colors.black,
+                  decoration: TextDecoration.underline),
             ),
           ),
           SizedBox(height: 20),

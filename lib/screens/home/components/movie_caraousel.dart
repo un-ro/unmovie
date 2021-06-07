@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movieapp/model/Movie.dart';
-import 'movieCard.dart';
+import 'package:movieapp/model/movie.dart';
+import 'movie_card.dart';
 import 'dart:math' as math;
 
 class Carousel extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movieapp/model/Movie.dart';
+import 'package:movieapp/model/movie.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -50,7 +50,12 @@ class DetailScreen extends StatelessWidget {
                   textStyle: TextStyle(color: Colors.white, fontSize: 35.0)),
             ),
             actions: [
-              IconButton(onPressed: () { Share.share('Found this movie at UnMovie ${movie.title}, released at ${movie.year}'); }, icon: Icon(Icons.share))
+              IconButton(
+                  onPressed: () {
+                    Share.share(
+                        'Found this movie at UnMovie ${movie.title}, released at ${movie.year}');
+                  },
+                  icon: Icon(Icons.share))
             ],
             backgroundColor: Colors.transparent,
           ),

@@ -9,3 +9,6 @@ Clone this project to your local machine first. Then run this command into your 
 flutter pub get
 ```
 Make sure your machine already installed Flutter SDK and other requirements.
+
+## Dicoding Review
+![Review](git_asset/submission.png)

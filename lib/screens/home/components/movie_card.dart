@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movieapp/model/Movie.dart';
+import 'package:movieapp/model/movie.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:movieapp/screens/detail/detail_screen.dart';
 
@@ -46,9 +46,8 @@ class MovieCard extends StatelessWidget {
                 movie.title,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.roboto(
-                  textStyle: Theme.of(context).textTheme.headline5,
-                  fontWeight: FontWeight.bold
-                ),
+                    textStyle: Theme.of(context).textTheme.headline5,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             Row(
