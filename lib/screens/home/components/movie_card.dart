@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movieapp/model/movie.dart';
+import 'package:movieapp/model/Movie.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:movieapp/screens/detail/detail_screen.dart';
 

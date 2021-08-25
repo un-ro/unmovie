@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movieapp/model/movie.dart';
+import 'package:movieapp/model/Movie.dart';
 import 'movie_card.dart';
 import 'dart:math' as math;
 
